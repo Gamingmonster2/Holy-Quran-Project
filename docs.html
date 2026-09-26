@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-theme="light" data-font-size="3">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f5ef" />
+    <meta name="description" content="توثيق موقع القرآن الكريم: مصادر البيانات والرخص، طريقة النشر، سجل الترحيل، واستراتيجية الاختبار." />
+    <title>التوثيق — موقع القرآن الكريم</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Noto+Naskh+Arabic:wght@400;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="./src/styles/main.css" />
+    <script type="module" src="./src/docs-viewer.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#doc-body">تخطَّ إلى المحتوى</a>
+
+    <header class="app-header">
+      <div class="app-header__inner">
+        <a class="brand" href="./index.html">
+          <span class="brand__mark" aria-hidden="true">ق</span>
+          <span class="brand__text">موقع القرآن الكريم</span>
+        </a>
+        <nav class="app-nav" aria-label="التنقل">
+          <a href="./index.html">التطبيق</a>
+          <a href="./docs.html" class="is-active">التوثيق</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="app-main">
+      <div class="docs-layout">
+        <aside class="docs-aside">
+          <h1 class="docs-aside__title">التوثيق</h1>
+          <nav id="doc-menu" class="docs-menu" aria-label="قائمة المستندات"></nav>
+        </aside>
+        <section class="docs-main">
+          <h2 id="doc-title" class="docs-main__title"></h2>
+          <div id="doc-body"></div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="app-footer">
+      <p><a href="./index.html">← رجوع إلى التطبيق</a></p>
+    </footer>
+  </body>
+</html>

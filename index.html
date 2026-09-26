@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-theme="light" data-font-size="3">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f7f5ef" />
+    <meta
+      name="description"
+      content="تطبيق ويب لقراءة القرآن الكريم: المصحف المدني، قراءة آية بآية، ترجمات وتفسير، بحث في النص، علامات ووسوم، وتلاوة صوتية."
+    />
+    <meta name="color-scheme" content="light dark" />
+    <title>القرآن الكريم — قراءة وبحث وتلاوة</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Noto+Naskh+Arabic:wght@400;600;700&family=Cairo:wght@400;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="./src/styles/main.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231f6f4a'/%3E%3Ctext x='32' y='44' font-size='36' text-anchor='middle' fill='%23fff' font-family='serif'%3E%D9%82%3C/text%3E%3C/svg%3E"
+    />
+
+    <script type="module" src="./src/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+
+    <header class="app-header">
+      <div class="app-header__inner">
+        <a class="brand" href="#/">
+          <span class="brand__mark" aria-hidden="true">ق</span>
+          <span class="brand__text">القرآن الكريم</span>
+        </a>
+
+        <nav class="app-nav" aria-label="التنقل الرئيسي">
+          <a data-nav="home" href="#/">الرئيسية</a>
+          <a data-nav="mushaf" href="#/page/1">المصحف</a>
+          <a data-nav="search" href="#/search">البحث</a>
+          <a data-nav="bookmarks" href="#/bookmarks">العلامات</a>
+          <a data-nav="settings" href="#/settings">الإعدادات</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="app-main" tabindex="-1">
+      <div class="loading" role="status">
+        <span class="spinner" aria-hidden="true"></span>
+        <span>جارٍ التحميل…</span>
+      </div>
+    </main>
+
+    <div id="audio-bar-host"></div>
+    <div id="dialog-host"></div>
+    <div id="toast-host" class="toast-host" aria-live="polite" aria-atomic="false"></div>
+
+    <footer class="app-footer">
+      <p>
+        مفتوح المصدر تحت رخصة GPL-3.0، بإلهام من مشروع
+        <a href="https://github.com/quran/quran_android" target="_blank" rel="noopener">Quran for Android</a>.
+        البيانات من مصادر ساكنة عامة (quran-api · medina-mushaf · everyayah) — للاستخدام غير التجاري.
+      </p>
+      <p>
+        <a href="./docs.html?f=DATA_SOURCES.md">مصادر البيانات والرخص</a>
+        ·
+        <a href="./docs.html?f=MIGRATION-FROM-ANDROID.md">كيف بُني هذا التطبيق</a>
+        ·
+        <a href="./docs.html?f=DEPLOY-GITHUB-PAGES.md">كيف تنشره</a>
+        ·
+        <a href="./docs.html">كل التوثيق</a>
+      </p>
+    </footer>
+
+    <noscript>
+      <p class="notice notice--error">هذا التطبيق يحتاج تشغيل JavaScript في المتصفح.</p>
+    </noscript>
+  </body>
+</html>

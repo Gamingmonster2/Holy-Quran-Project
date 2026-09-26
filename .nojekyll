@@ -1,0 +1,5 @@
+# This file tells GitHub Pages to publish the repository as-is.
+#
+# Without it, Pages runs Jekyll, which ignores files and folders whose names
+# start with an underscore or a dot and can rewrite content unexpectedly. This
+# project is plain static files, so no processing is wanted.

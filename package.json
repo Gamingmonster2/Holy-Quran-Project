@@ -1,0 +1,21 @@
+{
+  "name": "quran-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "موقع القرآن الكريم — a dependency-free Quran web app (static, GitHub Pages ready), inspired by the open source Quran for Android project.",
+  "license": "GPL-3.0-or-later",
+  "type": "module",
+  "keywords": ["quran", "islam", "mushaf", "arabic", "static-site", "github-pages"],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs --port 5173",
+    "test": "node tests/run.mjs",
+    "verify": "node tests/http-smoke.mjs",
+    "check": "node tests/run.mjs && node --check server.mjs && node tests/http-smoke.mjs"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

@@ -1,0 +1,26 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+
+# Node (no dependencies are required, but keep the tree clean anyway)
+node_modules/
+npm-debug.log*
+
+# Local data dumps: full Quran text / translations / audio downloaded by the
+# user (see docs/DATA_SOURCES.md). Never committed: the data has its own
+# licenses and is served from the upstream CDNs.
+data/dump/
+data/audio/
+*.local.json
+
+# Android leftovers intentionally dropped during the migration (see
+# docs/MIGRATION-FROM-ANDROID.md) - keep them from creeping back in.
+build/
+.gradle/
+local.properties
+app/
+*.apk
+*.aar
